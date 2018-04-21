@@ -118,7 +118,7 @@
             loadD();
         });
         var obj;
-        $.getJSON("https://yts.am/api/v2/list_movies.json", function(json) {
+        $.getJSON("frox.php?https://yts.am/api/v2/list_movies.json", function(json) {
             obj = json;
 
             var image, title, description, link;
@@ -167,7 +167,7 @@
                 // ajax call get data from server and append to the div
                 //window.alert("load more!!");
                 var obj;
-                $.getJSON("https://yts.am/api/v2/list_movies.json?page=" + page, function(json) {
+                $.getJSON("frox.php?https://yts.am/api/v2/list_movies.json?page=" + page, function(json) {
                     page++;
                     obj = json;
 
